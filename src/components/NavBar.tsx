@@ -1,5 +1,6 @@
-import { HStack ,Image, Text} from "@chakra-ui/react";
+import { HStack ,Image} from "@chakra-ui/react";
 import logo from "../assets/react.svg";
+import ColorSwitch from "./ColorSwitch";
 
 
 const NavBar = () => {
@@ -7,7 +8,7 @@ const NavBar = () => {
   <div>
 <HStack>
     <Image boxSize='64px' src={logo}/>
-    <Text>Game Hub</Text>
+  <ColorSwitch/>
 </HStack>
   </div>
   )
