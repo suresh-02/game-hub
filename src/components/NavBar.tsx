@@ -9,7 +9,7 @@ const NavBar = () => {
 <HStack className="flex justify-between py-[11px] px-[60px]">
   <div className="flex items-center gap-[30px]">
     <Image boxSize='64px' src={logo}/>
-    <Text className="text-2xl font-bold">Game Hub</Text>
+    <Text className="text-2xl font-bold text-[#00df9d ]">Game Hub</Text>
     </div>
     <div className="flex justify-center gap-[20px]">
       <p className="font-bold" > Dark/Light Mode</p>
