@@ -4,11 +4,12 @@ import { useData } from "./useData";
 
 
 
-export interface genres{
+export interface Genres{
 id:number;
-name:string
+name:string;
+image_background:string;
 }
 
 
-export const useGenres = () => useData<genres>('/genres');
+export const useGenres = () => useData<Genres>('/genres');
    
