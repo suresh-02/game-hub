@@ -10,7 +10,11 @@ import { useData } from "../Hooks/useData";
 import { Genres } from "../Hooks/useGenres";
 import croppedImage from "../services.ts/image-url";
 
-const GenresList = () => {
+interface props {
+  onSelectGenre: (genre: Genres) => void;
+}
+
+const GenresList = ({ onSelectGenre }: props) => {
   const { data, isLoading, error } = useData<Genres>("/genres");
 
   if (isLoading) return <Spinner />;
@@ -28,7 +32,7 @@ const GenresList = () => {
             />
             <Button
               variant="link"
-              onClick={() => console.log(genre)}
+              onClick={() => onSelectGenre(genre)}
               fontSize="lg"
             >
               {genre.name}
