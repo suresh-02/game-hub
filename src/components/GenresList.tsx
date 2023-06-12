@@ -1,5 +1,5 @@
 import { useData } from "../Hooks/useData";
-import { genres, useGenres } from "../Hooks/useGenres"
+import { genres } from "../Hooks/useGenres"
 
 
 const GenresList = () => {
