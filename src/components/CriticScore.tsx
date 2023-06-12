@@ -5,7 +5,8 @@ interface props {
 }
 
 const CriticScore = ({ score }: props) => {
-  let color = score > 75 ? "green" : score < 75 ? "yellow" : "red";
+  let color =
+    score > 75 ? "green" : score < 75 ? "yellow" : score < 25 ? "red" : "pink";
 
   return (
     <div>

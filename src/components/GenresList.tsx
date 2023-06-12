@@ -12,9 +12,10 @@ import croppedImage from "../services.ts/image-url";
 
 interface props {
   onSelectGenre: (genre: Genres) => void;
+  selectedgenre: Genres | null;
 }
 
-const GenresList = ({ onSelectGenre }: props) => {
+const GenresList = ({ onSelectGenre, selectedgenre }: props) => {
   const { data, isLoading, error } = useData<Genres>("/genres");
 
   if (isLoading) return <Spinner />;
@@ -34,6 +35,7 @@ const GenresList = ({ onSelectGenre }: props) => {
               variant="link"
               onClick={() => onSelectGenre(genre)}
               fontSize="lg"
+              color={genre.id === selectedgenre?.id ? "green.300" : "normal"}
             >
               {genre.name}
             </Button>

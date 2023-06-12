@@ -13,7 +13,7 @@ import { SiNintendo } from "react-icons/si";
 import { BsGlobe } from "react-icons/bs";
 import { IconType } from "react-icons";
 
-interface props {
+export interface props {
   platforms: Platform[];
 }
 
