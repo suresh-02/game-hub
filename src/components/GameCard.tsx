@@ -10,10 +10,10 @@ interface props {
 
 const GameCard = ({ games }: props) => {
   return (
-    <Card>
+    <Card className="h-max-content">
       <Image src={croppedImage(games.background_image)} />
       <CardBody>
-        <Heading fontSize={"4xl"}>{games.name}</Heading>
+        <Heading fontSize={"2xl"}>{games.name}</Heading>
         <HStack className="flex justify-between px-[10px]">
           <PlatformIconList
             platforms={games.parent_platforms.map((p) => p.platform)}
