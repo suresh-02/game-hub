@@ -9,7 +9,7 @@ interface fetchResponse<T>{
 }
 
 
-export const   useData = <T>( endpoint:string ,requestConfig?:AxiosRequestConfig,deps?:any[])=>{
+export const   useData = <T>( endpoint:string ,requestConfig?:AxiosRequestConfig,deps?:any[] )=>{
 
 
     const controller = new AbortController(); 
