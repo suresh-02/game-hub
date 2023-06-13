@@ -10,7 +10,7 @@ interface props {
 
 const GameCard = ({ games }: props) => {
   return (
-    <Card className="h-max-content">
+    <Card className="h-max-content md:gap-[10px]">
       <Image src={croppedImage(games.background_image)} />
       <CardBody>
         <Heading fontSize={"2xl"}>{games.name}</Heading>
