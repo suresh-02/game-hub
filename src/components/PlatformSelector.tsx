@@ -3,7 +3,9 @@ import { SiNintendo } from "react-icons/si";
 import { usePlatform } from "../Hooks/usePlatform";
 
 const PlatformSelector = () => {
-  const { data } = usePlatform();
+  const { data, error } = usePlatform();
+
+  if (error) return null;
 
   return (
     <Menu>
