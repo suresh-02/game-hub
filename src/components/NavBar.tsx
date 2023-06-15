@@ -1,7 +1,6 @@
 import { HStack, Image, Text } from "@chakra-ui/react";
 import logo from "../assets/logo.jpeg";
 import ColorSwitch from "./ColorSwitch";
-import SearchInput from "./SearchInput";
 
 const NavBar = () => {
   return (
@@ -15,7 +14,7 @@ const NavBar = () => {
           Game Hub
         </Text>
 
-        <SearchInput />
+        {/* <SearchInput /> */}
 
         <Text whiteSpace={"nowrap"} className="font-bold">
           {" "}
